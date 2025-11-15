@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BYFORT AI - Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body{font-family:Inter,Helvetica,Arial;background:#051025;color:#fff;margin:0}
+    .app{max-width:900px;margin:20px auto;padding:20px}
+    .card{background:linear-gradient(180deg,#071233 0%, #03101f 100%);border-radius:12px;padding:16px}
+    .input{width:100%;padding:12px;border-radius:8px;border:none;margin-top:8px}
+    .btn{padding:10px 14px;border-radius:8px;border:none;background:#0b63ff;color:#fff}
+    .chat{height:400px;overflow:auto;background:#010618;padding:12px;border-radius:8px}
+    .row{display:flex;gap:8px}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <h2 style="color:#bcdcff">BYFORT AI — Demo</h2>
+      <p style="color:#98bede">No login — device token auto-created by backend</p>
+      <div id="chat" class="chat"></div>
+      <div style="margin-top:10px" class="row">
+        <input id="q" class="input" placeholder="Tanya apa saja ke BYFORT AI..." />
+        <button id="send" class="btn">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+  </html>
